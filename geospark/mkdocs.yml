@@ -1,0 +1,73 @@
+site_name: GeoSpark
+pages:
+    - Home: index.md
+    - Download:
+      - Quick start: download/overview.md
+      - Release notes: download/GeoSpark-All-Modules-Release-notes.md      
+      - Maven Central coordinate: download/GeoSpark-All-Modules-Maven-Central-Coordinates.md
+      - Set up Spark cluser: download/cluster.md
+      - Spark Scala shell: download/scalashell.md
+      - Self-contained project: download/project.md
+      - Compile the source code: download/compile.md
+    - Tutorial:
+      - Write an Spatial RDD application: tutorial/rdd.md
+      - Write an Spatial SQL/DataFrame application: tutorial/sql.md
+      - Visualize an Spatial RDD: tutorial/viz.md
+      - Template project: tutorial/GeoSpark-Runnable-DEMO.md
+      - Frequently Asked Questions (FAQ): tutorial/faq.md
+      - Tune GeoSpark RDD application: tutorial/Advanced-Tutorial-Tune-your-GeoSpark-Application.md
+      - Benchmark: tutorial/benchmark.md            
+    - API:
+      - GeoSpark core (RDD):
+        - Scala/Java doc: api/GeoSpark-Scala-and-Java-API.md
+      - GeoSpark SQL:
+        - Quick start: api/sql/GeoSparkSQL-Overview.md
+        - Constructor: api/sql/GeoSparkSQL-Constructor.md
+        - Function: api/sql/GeoSparkSQL-Function.md
+        - Predicate: api/sql/GeoSparkSQL-Predicate.md
+        - Aggregate function: api/sql/GeoSparkSQL-AggregateFunction.md
+        - Join query (optimizer): api/sql/GeoSparkSQL-Optimizer.md
+        - Parameter: api/sql/GeoSparkSQL-Parameter.md
+      - GeoSpark viz:
+        - Scala/Java doc:  api/Babylon-Scala-and-Java-API.md
+    - Contributing:
+      - Contributing rule: contribute/rule.md
+      - Contributor: contribute/contributor.md 
+    - Contact:
+      - Questions: contact/contact.md
+      - Publications: contact/publication.md
+    - License: license/License.md
+repo_url: https://github.com/DataSystemsLab/GeoSpark
+theme: 
+  name: 'material'
+  palette:
+    primary: 'Cyan'
+    accent: 'Pink'
+google_analytics: ['UA-64886725-1', 'www.public.asu.edu/~jiayu2/geospark/index.html']
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/DataSystemsLab/GeoSpark'
+    - type: 'twitter'
+      link: 'https://twitter.com/GeoSpark_ASU'
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
